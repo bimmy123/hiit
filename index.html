@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- 
+      This is an HTML comment
+      You can write text in a comment and the content won't be visible in the page
+    -->
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut Icon" type="image/x-icon" href="icon-512x512.png" />
+    <link rel="apple-touch-icon" href="icon-192x192.png" />
+
+    <!--
+      This is the page head - it contains info the browser uses
+      Like the title, which appears on the browser tab but not inside the page
+      Further down you'll see the content that displays in the page
+    -->
+    <title>HIIT Timer</title>
+
+    <!-- The website stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- The website JavaScript file -->
+    <script src="script.js" defer></script>
+    
+  </head>
+  <body>
+
+    <header id="header">
+    <h1>Timer Detail</h1>
+    
+    
+    
+    <form class="form" id="details">
+      <h4>Name</h4>
+      <input type="string" id="fname" name="fname" value="HIIT TIMER" oninput="nameFunction()"><br><br>
+      <h4>Sets</h4>
+      <input type="number" id="Sets" name="Sets" value="6" oninput="setsFunction()"><br><br>
+    </form>
+
+    
+    <h2>High Intensity Interval</h2>
+
+    
+    <form class="form" id="high">
+      <h4>Name</h4>
+      <input type="string" id="name1" name="name1" value="High Intensity" oninput="name1Function()"><br><br>
+      <h4>Duration(seconds)</h4>
+      <input type="number" id="duration" name="duration" value="30" oninput="durationFunction()"><br><br>
+
+    </form>
+   
+    
+    <h2>Low Intensity Interval</h2>
+    <form class="form" id="low">
+      <h4>Name</h4>
+      <input type="string" id="name2" name="name2" value="Low Intensity" oninput="name2Function()"><br><br>
+      <h4>Duration(seconds)</h4>
+      <input type="number" id="duration1" name="duration1" value="90" oninput="duration1Function()"><br><br>
+
+    </form>
+   
+
+
+    <h2>Warmup/Cooldown</h2>
+
+    
+    <form class="form" id="warm">
+      <h4>Duration(seconds)</h4>
+      <input type="number" id="duration2" name="duration2" value="180" oninput="duration2Function()"><br><br>
+
+    </form>
+    
+
+    <input id="Create" type="button" value="Create" onclick="createFunction()">
+
+  </header>
+  <div id="footer">
+    <main>
+      <div class="Time" id="time">Time</div>
+
+
+      <div class="Remaining">Remaining: <span id="remaining"></span> </div>
+      <div class="elapsed">Elapsed: <span id="elapased"></span> </div>
+      <div class="Round">Round: <span id="round"></span> </div>
+      
+
+ 
+
+      
+
+        <input id="warmup" type="button" value="Warmup/Cooldown" onclick="warmFunction()">
+        <input id="highIntensity" type="button" value="High Intensity" onclick="highFunction()">
+        <input id="lowIntensity" type="button" value="Low Intensity" onclick="lowFunction()">
+
+    </main>
+    <div id="controls">
+      <input id="Start" type="button" value="Start" onclick="startFunction()">
+      <input id="Pause" type="button" value="Pause" onclick="pauseFunction()">
+      <input id="Restart" type="button" value="Restart" onclick="restartFunction()">
+
+    </div>
+  </div>
+  </body>
+</html>

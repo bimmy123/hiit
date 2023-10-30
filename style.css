@@ -1,0 +1,184 @@
+body {
+
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #263544;
+    color:white;
+}
+
+h1 {
+
+    text-align: center;
+
+}
+
+h2 {
+
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+
+    font-size: 40px;
+    margin-top: 0;
+}
+
+
+
+.form {
+    border: 4px solid black;
+    padding: 5px;
+    width: 60%;
+    border-radius: 5px;
+    display: grid;
+    place-items: center;
+    background-color: #18293b;
+    color:white;
+}
+
+input {
+    background-color:#3e4f61;
+    color:white;
+    border-radius: 5px;
+    border: 1px solid black;
+    padding: 3px;
+}
+
+h2 {
+    margin-top: 30px;
+}
+
+#details, #high, #low {
+    height:120px;
+    display: grid;
+    grid-template-rows: 15px 40px 10px 20px;
+}
+
+#warm {
+    height:60px;
+    display: grid;
+    grid-template-rows: 25px 40px;
+}
+
+#Create {
+    margin-top: 30px;
+    padding: 20px;
+    border-radius:5px;
+    border: 2px dotted black;
+    background-color: #18293b;
+    cursor:pointer;
+    font-size: 1.4em;
+    margin-bottom: 30px;
+
+}
+
+header {
+    display: grid;
+    place-items: center;
+}
+
+#footer {
+    margin-top: 100px;
+    display: none;
+    place-items: center;
+}
+
+main {
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr 1fr;
+    grid-template-rows: 300px 100px 100px;
+    height: 500px;
+    width: 80%;
+    border: 5px solid black;
+    grid-template-areas: 
+    'a a a a'
+    'f b b g'
+    'j h h i';
+}
+
+.Time {
+
+text-align: center;
+margin-top: 50px;
+font-size: 10em;
+grid-area: a;
+}
+
+.Round {
+
+    text-align: center;
+
+    font-size: 30px;
+    grid-area: b;
+
+}
+#Start {
+    padding:20px;
+    font-size: 1.4em;
+    text-align:  center;
+    cursor: pointer;
+}
+
+#Pause {
+    padding:20px;
+    font-size: 1.4em;
+    cursor: pointer;
+    text-align:  center;
+    display: none;
+}
+#Restart {
+    padding:20px;
+    font-size: 1.4em;
+    text-align: center;
+    cursor: pointer;
+}
+.Remaining {
+    text-align: center;
+    grid-area: f;
+    font-size: 30px;
+
+}
+
+.elapsed {
+
+    text-align: center;
+    grid-area: g;
+    font-size: 30px;
+
+}
+
+#warmup {
+    font-size: 1.4em;
+    grid-area: h;
+    cursor: pointer;
+}
+
+#highIntensity {
+    font-size: 1.4em;
+    grid-area: i;
+    cursor: pointer;
+}
+
+#lowIntensity {
+    font-size: 1.4em;
+    grid-area: j;
+    cursor: pointer;
+}
+
+#round {
+    display: block;
+}
+
+#remaining {
+    display: block;
+}
+
+#elapased {
+    display: block;
+}
+
+#controls {
+    display: inline;
+    margin-top: 10px;
+}
+
+#controls > input {
+    width: 150px;
+}
